@@ -1,0 +1,28 @@
+h1{
+text-align: center;
+color:#d9870b;
+}
+header {
+background-color:rgb(17, 87, 117);
+padding: 20px;
+text-align:center
+}
+.left-img {
+float: left;
+text-align: center;
+}
+a {
+text-decoration: none;
+color: black;
+font-size: 20px;
+padding: 5px;
+}
+main{
+     padding: 2px;
+    margin: auto;
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+    text-align: justify;
+    background-color: rgb(251, 246, 246);
+}
