@@ -191,7 +191,11 @@ Available at: https://www.amazon.com/Crochet-Extensions-Braiding-Extended-Dreadl
 
 14. SitePoint. (2023). Rem in CSS: Understanding and Using rem Units.
 Available at: https://www.sitepoint.com/understanding-and-using-rem-units-in-css/
-(Accessed: 25 September 2025).
+(Accessed: 15 September 2025).
+
+15. W3Schools. (2025). HTML Responsive Images.
+Available at: https://www.w3schools.com/html/html_responsive.asp
+(Accessed: 21 September 2025).
 
 
 
