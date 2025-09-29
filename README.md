@@ -91,7 +91,7 @@ Contact(contact.html)
 
 - Part 1 feedback:100%, therefore no feedback changes were required.
 
-<strong> Part 2</strong> (HTML & CSS Updates)
+<strong> Part 2</strong> (Recent HTML & CSS Updates)
 - Added external CSS file (styles.css) and linked it properly on my htmls.
 
 - Corrected CSS comment syntax to ensure code validity.
