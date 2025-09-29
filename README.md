@@ -78,17 +78,75 @@ Contact(contact.html)
 - Email address
 - Google Maps for location
 
-<strong>Changelog</strong>
+<strong> Changelog</strong>
 
+<strong> Part 1</strong> (Completed)
 - Project proposal created.
-  
-- Define the business' mission and vision.
-  
+
+- Defined the business’ mission and vision.
+
 - Built HTML files for the project.
 
-- Proof read and fixed errors
+- Proofread and fixed errors.
 
-<strong>References</>
+- Part 1 feedback:100%, therefore no feedback changes were required.
+
+<strong> Part 2</strong> (HTML & CSS Updates)
+- Added external CSS file (styles.css) and linked it properly on my htmls.
+
+- Corrected CSS comment syntax to ensure code validity.
+
+- Styled the hero section and buttons with brand colours, hover effects, and transitions for a modern look.
+
+- Improved navigation bar styling by assigning classes for easier CSS targeting.
+
+- Enhanced branding text visibility with outline styling while keeping gold colour intact.
+
+- Updated base typography to ensure consistent font hierarchy across the website.
+
+- Created a responsive booking form with better spacing, padding, and mobile-friendly scaling.
+
+- Ensured all form inputs, selects, and buttons adjust to 100% width on smaller screens.
+
+- Fixed minor HTML typos (attribute mismatches, nesting issues, and empty <link> tag).
+
+- Improved layout spacing using padding, margins, and alignment for a cleaner presentation.
+
+- Standardised background colours across sections for visual consistency.
+
+<strong> Screenshot evidence of the different screen sizes</strong> 
+
+<strong> Mobile (iPhone XR)</strong>
+
+<img width="1022" height="914" alt="Screenshot 2025-09-29 121854" src="https://github.com/user-attachments/assets/297f8f22-3e3c-48b5-90ed-5ce40faa3b5b" />
+
+
+<img width="1164" height="966" alt="Screenshot 2025-09-29 122750" src="https://github.com/user-attachments/assets/a221d5c0-0e7f-4056-a2f1-7a349221dc11" />
+
+. 
+
+
+<strong> Tablet/iPad (iPad Pro)</strong>
+
+<img width="1150" height="898" alt="Screenshot 2025-09-29 122853" src="https://github.com/user-attachments/assets/df9fbfa9-1e8e-436d-82a2-44f16939b22e" />
+
+
+<img width="1167" height="921" alt="Screenshot 2025-09-29 122907" src="https://github.com/user-attachments/assets/63a90a05-edfc-48a7-b1ee-5f673cba9776" />
+
+.
+
+
+<strong> Desktop</strong>
+
+<img width="1919" height="953" alt="Screenshot 2025-09-29 123016" src="https://github.com/user-attachments/assets/ec44e54a-efe8-4905-bc45-ba9bdda46c87" />
+
+
+<img width="1915" height="966" alt="Screenshot 2025-09-29 123041" src="https://github.com/user-attachments/assets/9f71cba7-36db-4c6f-89ea-0604b70c33da" />
+
+
+
+
+<strong> References</strong>
 
 1. Afrihost. (2025). Shared Hosting – Affordable Hosting in South Africa. Available at: https://www.afrihost.com/shared-hosting [Accessed 14 August 2025].
 
@@ -130,6 +188,7 @@ Available at: https://www.youtube.com/watch?v=JDEh2QflqNA
 13.Amazon (Image)
 Originea (Accessed on 24 August 2025)
 Available at: https://www.amazon.com/Crochet-Extensions-Braiding-Extended-Dreadlocks/dp/B0D62RNCBX
+
 
 
 
