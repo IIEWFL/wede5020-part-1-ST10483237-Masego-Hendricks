@@ -189,6 +189,10 @@ Available at: https://www.youtube.com/watch?v=JDEh2QflqNA
 Originea (Accessed on 24 August 2025)
 Available at: https://www.amazon.com/Crochet-Extensions-Braiding-Extended-Dreadlocks/dp/B0D62RNCBX
 
+14. SitePoint. (2023). Rem in CSS: Understanding and Using rem Units.
+Available at: https://www.sitepoint.com/understanding-and-using-rem-units-in-css/
+(Accessed: 25 September 2025).
+
 
 
 
