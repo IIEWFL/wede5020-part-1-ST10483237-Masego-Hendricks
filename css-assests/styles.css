@@ -1,5 +1,4 @@
-/* 
-   1. CSS Reset */
+/* 1. CSS Reset */
 * {
     margin: 0;
     padding: 0;
@@ -21,6 +20,22 @@ body {
     margin: 0;
     padding: 0;
 }
+
+/* ===== Layout Fix: Center Content ===== */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto; /* centers all content */
+  padding: 1rem;
+}
+
+/* For any main sections without .container */
+section {
+  margin: 2rem auto;
+  width: 90%;
+  max-width: 1200px;
+}
+
 
 /* Typography scale */
 
@@ -72,24 +87,56 @@ header {
 
 /* Navigation */
 nav {
-    margin-top: 1rem;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
+  margin-top: 1rem;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  background-color: #d07bbf;
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    padding: 0.75rem 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* allows wrapping on small screens */
+  gap: 2rem;
+  padding: 0.75rem 0;
+  margin: 0;
 }
 
 nav ul li a {
-    color: black;
-    font-weight: bold;
-    font-size: 1rem;
+  color: black;
+  font-weight: bold;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
+
+nav ul li a:hover {
+  color: white;
+  background-color: #d4af37;
+  padding: 0.3rem 0.8rem;
+  border-radius: 5px;
+}
+
+/*  Mobile View  */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column; /* stacks vertically */
+    gap: 1rem;
+    background-color: #333;
+    padding: 1rem;
+  }
+
+  nav ul li a {
+    color: white;
+  }
+
+  nav ul li a:hover {
+    background-color: #e75480;
+    color: #fff;
+  }
+}
+
 
 /* Services Section */
 .container {
@@ -198,16 +245,13 @@ footer a:hover {
 img {
     max-width: 100%;
     height: auto;
+    display: block;
 }
 
-.form2{
-    text-align: center;
-    margin: 2rem 0;
-}
-
-
-.form2{
+/*  Form Button */
+.form2 {
     display: inline-block;
+    text-align: center;
     background-color: #a8325f;
     color: #fff;
     padding: 0.75rem 1.5rem;
@@ -217,13 +261,15 @@ img {
     text-decoration: none;
     transition: all 0.3s ease;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    margin: 2rem 0;
 }
 
-.form2 a:hover {
+.form2:hover {
     background-color: #d55a87;
     transform: translateY(-3px);
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
+
 
 /* Container styles */
 .booking-container {
@@ -272,6 +318,159 @@ img {
   background-color: #b98ba3;
 }
 
+section, nav, footer {
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  border-radius: 5px;
+}
 
+/* Accordion Styles */
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  background-color: #f9f9f9;
+  border-left: 3px solid #e75480;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+  padding: 0 1rem; /* collapsed state */
+}
 
+.accordion-content p,
+.accordion-content img {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
 
+.accordion-content[style*="max-height"] p,
+.accordion-content[style*="max-height"] img {
+  opacity: 1;
+  transition-delay: 0.2s;
+}
+
+/* Gallery Styles */
+.gallery-section {
+  text-align: center;
+  padding: 2rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.gallery-img {
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/*  Lightbox Overlay  */
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.85);
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.5s ease;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(255,255,255,0.3);
+  animation: zoomIn 0.4s ease;
+}
+
+#closeBtn {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+#closeBtn:hover {
+  color: #d4af37;
+}
+
+/* Animations  */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes zoomIn {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+/* Dynamic Services Section */
+#dynamic-services {
+  text-align: center;
+}
+
+#searchInput {
+  width: 80%;
+  max-width: 400px;
+  padding: 0.7rem;
+  margin-bottom: 1.5rem;
+  border: 2px solid #e75480;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+#serviceList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.service-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: scale(1.03);
+}
+
+.service-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.search-sort-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+#sortSelect {
+  padding: 0.7rem;
+  border: 2px solid #e75480;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #fff;
+  cursor: pointer;
+}
